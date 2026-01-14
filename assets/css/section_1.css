@@ -1,0 +1,34 @@
+.banner-section .shape-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.shape-2 {
+    background-image: url("../img/shape-2.png");
+    width: 109px;
+    height: 195px;
+}
+
+.banner-section .icon-lines {
+    position: absolute;
+    bottom: 45%;
+    right: 39px;
+}
+
+
+.auto-container {
+    position: static;
+    max-width: var(--container-width) 1310px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.bg-image img {
+    object-fit: cover;
+}
+
+.icon-shape1 {
+    background-image: url("../img/shape-1.png");
+}

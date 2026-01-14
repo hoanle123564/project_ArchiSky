@@ -1,0 +1,119 @@
+/* Section 7 - Simple Process */
+.section-7 {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+.section-7 .sec-title {
+    margin-bottom: 60px;
+}
+
+.section-7 .sub-title {
+    text-transform: uppercase;
+    color: #c9a564;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.section-7 .sub-title::before {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: #c9a564;
+}
+
+.section-7 .sec-title h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #222;
+    margin-top: 15px;
+    line-height: 1.3;
+}
+
+/* Process Content */
+.section-7 .process-content {
+    display: flex;
+    justify-content: center;
+}
+
+/* Process Item */
+.section-7 .process-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* Process Box - Only border, transparent background */
+.section-7 .process-box {
+    position: relative;
+    padding: 60px 35px 40px;
+    background-color: transparent;
+    border: 1px solid #e3e3e3;
+    transition: all 0.3s ease;
+}
+
+/* Icon - No background, just the icon */
+.section-7 .icon-box {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.section-7 .icon-box i {
+    font-size: 45px;
+    color: #c9a564;
+    transition: all 0.3s ease;
+}
+
+/* Hover: Icon becomes black */
+.section-7 .process-box:hover .icon-box i {
+    color: #222;
+}
+
+/* Count - Positioned at top touching border */
+.section-7 .count {
+    position: absolute;
+    top: -25px;
+    right: 25px;
+    font-size: 60px;
+    font-weight: 700;
+    color: #222;
+    line-height: 1;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+    padding: 0 10px;
+}
+
+/* Hover: Count becomes yellow */
+.section-7 .process-box:hover .count {
+    color: #c9a564;
+}
+
+/* Title */
+.section-7 .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.section-7 .title a {
+    color: #222;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.section-7 .title a:hover {
+    color: #c9a564;
+}
+
+/* Text */
+.section-7 .text {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.7;
+}

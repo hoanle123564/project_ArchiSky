@@ -1,27 +1,29 @@
 /* Section 8 - About Us */
 .section-8 {
-    padding: 80px 0;
+    padding: 0;
     background-color: #ffffff;
 }
 
 .section-8 .container-about-us {
     display: flex;
     align-items: stretch;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding-right: 15px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Left Content - Image */
 .section-8 .content-left {
     flex: 1;
     position: relative;
+    min-height: 600px;
 }
 
 .section-8 .content-left img {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 /* Right Content */
@@ -29,10 +31,12 @@
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .section-8 .inner-column {
-    padding: 60px;
+    padding: 40px 60px;
+    max-width: 600px;
 }
 
 /* About Us Subtitle */
@@ -148,7 +152,7 @@
 
 @media (max-width: 768px) {
     .section-8 {
-        padding: 60px 0;
+        padding: 0;
     }
 
     .section-8 .content-down {

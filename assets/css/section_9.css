@@ -1,0 +1,14 @@
+.section-9 .bg {
+    background-image: url("../img/2.jpg");
+}
+
+.section-9 .bg::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: var(--theme-color-dark);
+    opacity: 0.9;
+}

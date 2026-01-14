@@ -83,11 +83,13 @@
 
 .icon-box {
     border-radius: 50%;
+    border: 2px solid var(--theme-color-light);
 }
 
 .service-block:hover .icon-box {
-    background-color: #c29540;
-    transform: rotate(180deg);
+    transform: rotateY(180deg);
+    background-color: var(--theme-color-light);
+    color: var(--theme-color-orange);
 }
 
 .service-block .content-box {
@@ -115,29 +117,36 @@
     gap: 8px;
     font-size: 13px;
     font-weight: 600;
-    color: #1a1a1a;
-    text-transform: uppercase;
+    color: var(--theme-color-dark);
     text-decoration: none;
     letter-spacing: 1px;
     padding: 12px 25px;
-    border: 2px solid #e0e0e0;
-    transition: all 0.3s ease;
+    border: 1px solid var(--theme-color-orange);
+    position: relative;
 }
 
-.service-block .read-more i {
-    font-size: 12px;
-    transition: transform 0.3s ease;
+.service-block .read-more::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--theme-color-orange);
+    z-index: -1;
+    transition: width 0.5s ease;
 }
+
+.service-block .read-more:hover::before {
+    width: 100%;
+}
+
 
 .service-block .read-more:hover {
-    color: #D4A756;
-    border-color: #D4A756;
+    color: var(--theme-color-light);
+    z-index: 2;
 }
 
-.service-block .read-more:hover {
-    background-color: #D4A756;
-    color: #ffffff;
-}
 
 /* Responsive */
 @media (max-width: 991px) {

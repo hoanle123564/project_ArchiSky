@@ -1,0 +1,95 @@
+/* Section 10 - Counter/Award Section */
+.section-10 {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.section-10 .award-content {
+    display: flex;
+    justify-content: center;
+}
+
+/* Counter Block */
+.section-10 .counter-block {
+    padding: 15px;
+}
+
+.section-10 .counter-block .inner {
+    padding: 0 15px 25px 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid #e8e8e8;
+}
+
+/* Hover - Yellow background */
+.section-10 .counter-block .inner:hover {
+    background-color: var(--theme-color-orange);
+}
+
+/* Icon Box */
+.section-10 .counter-block .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--theme-color-orange);
+    color: var(--theme-color-light);
+    font-size: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+
+}
+
+/* Hover - Icon background white, icon yellow */
+.section-10 .counter-block .inner:hover .icon {
+    background-color: var(--theme-color-light);
+    color: var(--theme-color-orange);
+    transform: rotateY(180deg);
+}
+
+/* Counter Title */
+.section-10 .counter-title {
+    font-size: 16px;
+    color: var(--theme-color-dark);
+    margin-bottom: 10px;
+    font-weight: 350;
+    transition: all 0.3s ease;
+}
+
+/* Hover - Title white */
+.section-10 .counter-block .inner:hover .counter-title {
+    color: var(--theme-color-light);
+}
+
+/* Count Box */
+.section-10 .count-box {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--theme-color-dark);
+    font-family: var(--title-font);
+    transition: all 0.3s ease;
+}
+
+/* Hover - Count white */
+.section-10 .counter-block .inner:hover .count-box {
+    color: var(--theme-color-light);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .section-10 .counter-block {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-10 {
+        padding: 40px 0;
+    }
+
+    .section-10 .count-box {
+        font-size: 32px;
+    }
+}

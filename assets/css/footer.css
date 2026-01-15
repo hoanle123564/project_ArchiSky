@@ -187,3 +187,119 @@ footer {
 .footer-bottom-links a:hover {
     color: var(--theme-color-orange);
 }
+
+/* ========================================
+   RESPONSIVE - Tablet (max-width: 1024px)
+   ======================================== */
+@media (max-width: 1024px) {
+    .footer-container-down {
+        padding: 40px 0 20px;
+    }
+
+    .footer-title {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - Tablet/Mobile (max-width: 768px)
+   ======================================== */
+@media (max-width: 768px) {
+    .footer-container-up {
+        padding: 25px 15px;
+    }
+
+    .logo-footer img {
+        margin-left: 0;
+    }
+
+    .social-media {
+        margin-right: 0;
+    }
+
+    .footer-container-down {
+        padding: 30px 15px 20px;
+    }
+
+    .footer-title {
+        font-size: 17px;
+        margin-bottom: 18px;
+    }
+
+    .footer-text,
+    .footer-links a,
+    .footer-contact li {
+        font-size: 13px;
+    }
+
+    .footer-bottom {
+        padding: 15px;
+    }
+
+    .copyright,
+    .footer-bottom-links a {
+        font-size: 13px;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - Small Mobile (max-width: 576px)
+   ======================================== */
+@media (max-width: 576px) {
+    .footer-container-up {
+        padding: 20px 10px;
+    }
+
+    .logo-footer img {
+        max-width: 120px;
+    }
+
+    .social-media a {
+        height: 32px;
+        width: 32px;
+        line-height: 32px;
+        font-size: 14px;
+    }
+
+    .footer-container-down {
+        padding: 25px 10px 15px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .email-subscribe input {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .email-subscribe button {
+        padding: 0 15px;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a,
+    .footer-contact li {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        padding: 12px 10px;
+    }
+
+    .copyright,
+    .footer-bottom-links a {
+        font-size: 12px;
+    }
+}

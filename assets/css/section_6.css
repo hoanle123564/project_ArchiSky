@@ -37,6 +37,14 @@
     gap: 15px;
 }
 
+/* Bottom Navigation Buttons - hidden on desktop */
+.team-nav-buttons-bottom {
+    display: none;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
 .team-nav-btn {
     width: 50px;
     height: 50px;
@@ -74,6 +82,7 @@
     transition: transform 0.4s ease;
 }
 
+/* Desktop: 3 items */
 .team-carousel-item {
     flex: 0 0 calc((100% - 48px) / 3);
     min-width: calc((100% - 48px) / 3);
@@ -181,7 +190,34 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+
+/* Tablet: 2 items, buttons at bottom */
+@media (max-width: 1023px) {
+
+    /* Hide top navigation buttons */
+    .team-nav-buttons {
+        display: none;
+    }
+
+    /* Show bottom navigation buttons */
+    .team-nav-buttons-bottom {
+        display: flex;
+    }
+
+    /* 2 items per view on tablet */
+    .team-carousel-item {
+        flex: 0 0 calc((100% - 24px) / 2);
+        min-width: calc((100% - 24px) / 2);
+    }
+
+    .sec-title-wrapper {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+}
+
+/* Mobile: 1 item */
+@media (max-width: 767px) {
     .section-6 {
         padding: 60px 0;
     }
@@ -190,10 +226,16 @@
         font-size: 32px;
     }
 
+    /* 1 item per view on mobile */
+    .team-carousel-item {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
+
     .team-nav-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 12px;
+        width: 50px;
+        height: 50px;
+        font-size: 14px;
     }
 }
 

@@ -38,14 +38,29 @@
     margin: 0;
 }
 
-/* Portfolio Grid */
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+/* Custom Portfolio Carousel */
+.portfolio-carousel-container {
+    position: relative;
     padding: 0 50px;
     max-width: 1400px;
     margin: 0 auto;
+}
+
+.portfolio-carousel-viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+.portfolio-carousel-track {
+    display: flex;
+    gap: 15px;
+    transition: transform 0.4s ease;
+}
+
+/* Desktop: 4 items */
+.portfolio-carousel-item {
+    flex: 0 0 calc((100% - 45px) / 4);
+    min-width: calc((100% - 45px) / 4);
 }
 
 .portfolio-item {
@@ -110,44 +125,56 @@
     padding: 10px 20px;
 }
 
-/* Carousel Indicators */
-.portfolio-section .carousel-indicators {
-    position: absolute;
-    bottom: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
+/* Portfolio Indicators */
+.portfolio-indicators {
     display: flex;
+    justify-content: center;
     gap: 10px;
-    z-index: 10;
+    margin-top: 60px;
 }
 
-.portfolio-section .carousel-indicators button {
+.portfolio-indicator {
     width: 14px;
     height: 14px;
     border-radius: 50%;
     background-color: transparent;
     border: 2px solid #D4A756;
-    opacity: 1;
-    margin: 0;
+    cursor: pointer;
     padding: 0;
     transition: all 0.3s ease;
 }
 
-.portfolio-section .carousel-indicators button.active {
+.portfolio-indicator.active {
+    background-color: #D4A756;
+}
+
+.portfolio-indicator:hover {
     background-color: #D4A756;
 }
 
 /* Responsive */
-@media (max-width: 1200px) {
-    .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr);
+
+/* Tablet: 2 items */
+@media (max-width: 1023px) {
+    .portfolio-carousel-item {
+        flex: 0 0 calc((100% - 15px) / 2);
+        min-width: calc((100% - 15px) / 2);
+    }
+
+    .portfolio-carousel-container {
+        padding: 0 30px;
     }
 }
 
-@media (max-width: 768px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr;
+/* Mobile: 1 item */
+@media (max-width: 767px) {
+    .portfolio-carousel-item {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
+
+    .portfolio-carousel-container {
+        padding: 0 20px;
     }
 
     .portfolio-section h2 {
@@ -160,5 +187,9 @@
 
     .portfolio-title {
         font-size: 15px;
+    }
+
+    .portfolio-item {
+        height: 300px;
     }
 }
